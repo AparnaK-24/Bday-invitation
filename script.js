@@ -7,8 +7,8 @@
  */
 
 // CLOUD SETUP: paste your project's values here to enable shared voting.
-const SUPABASE_URL = "";
-const SUPABASE_ANON_KEY = "";
+const SUPABASE_URL = "NEXT_PUBLIC_SUPABASE_URL=https://spjpqgawyvciqhpdptwc.supabase.co";
+const SUPABASE_ANON_KEY = "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_WDNmScy2waFhPyfy-CWktQ_GDz8_spP";
 
 const GUESTS = ["Aparna", "Anvi", "Maanya", "Eliana", "Aanya", "Sravya", "Anoushka", "Varsha", "Kearthi", "Savi", "Samhita"];
 const CRAFTS = [
