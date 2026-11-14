@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#071a3d">
-  <meta name="description" content="Celebrate Aparna's 16th birthday on December 5. RSVP, help choose the plans, and vote for crafts.">
+  <meta name="description" content="Celebrate Aparna's 16th birthday on December 5. RSVP, choose your RSVP plan and vote for crafts.">
   <title>Aparna's 16th Birthday ✦</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,6 @@
       <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#rsvp">RSVP</a>
-        <a href="#vote">Vote</a>
         <a href="#crafts">Crafts</a>
         <a href="#invitees">Invitees</a>
         <a class="nav-wishlist" href="#wishlist">Wishlist <span>✧</span></a>
@@ -41,19 +40,17 @@
   <main>
     <section class="hero section-wrap" id="home">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE CELEBRATION, A LOT OF MAGIC</div>
         <h1>Aparna's <span>16th</span><br><i>Birthday</i> <span class="title-sparkle">✦</span></h1>
-        <p class="hero-subtitle">Celebrate with me on <strong>December 5th!</strong><br>Help decide what we'll do and RSVP below.</p>
+        <p class="hero-subtitle">Celebrate with me on <strong>December 5th!</strong><br>RSVP below. if u rsvp after Nov 24 then js considered urself uninvited</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#rsvp">RSVP now <span>↗</span></a>
-          <a class="text-link" href="#vote">Help plan the day <span>↓</span></a>
+          <a class="text-link" href="#rsvp">Choose your plan <span>↓</span></a>
         </div>
-        <div class="hero-meta"><span class="meta-icon">✧</span><span>Saturday, December 5, 2026</span><span class="meta-dot">·</span><span>Roswell, Georgia</span></div>
+        <div class="hero-meta"><span class="meta-icon">✧</span><span>Saturday, December 5, 2026</span><span class="meta-dot">·</span><span>905 Holcomb Bridge Rd, Roswell, GA 30076</span></div>
       </div>
       <div class="hero-art reveal">
         <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
         <div class="hero-glass-card">
-          <div class="card-topline"><span>THE BIG DAY</span><span class="tiny-star">✦</span></div>
           <div class="date-number">05</div>
           <div class="date-month">DECEMBER <span>2026</span></div>
           <div class="date-divider"></div>
@@ -63,7 +60,7 @@
             <div><strong id="hoursLeft">—</strong><span>HOURS</span></div>
             <div><strong id="minutesLeft">—</strong><span>MINS</span></div>
           </div>
-          <div class="card-bottom-note"><span>✦</span> Sixteen looks good already <span>✦</span></div>
+          <div class="card-bottom-note"><span>✦</span> i feel old <span>✦</span></div>
         </div>
         <span class="floating-star star-one">✧</span><span class="floating-star star-two">✦</span><span class="floating-star star-three">✧</span>
       </div>
@@ -72,60 +69,60 @@
 
     <section class="quick-details section-wrap reveal" aria-label="Event details">
       <div class="detail-item"><span class="detail-icon">✧</span><div><small>THE DATE</small><strong>Saturday, December 5</strong></div></div>
-      <div class="detail-item"><span class="detail-icon">⌖</span><div><small>THE AREA</small><strong>Roswell, Georgia</strong></div></div>
-      <div class="detail-item"><span class="detail-icon">♡</span><div><small>THE VIBE</small><strong>Friends, crafts & dinner</strong></div></div>
+      <div class="detail-item"><span class="detail-icon">⌖</span><div><small>THE LOCATION</small><strong> Olive Garden: 905 Holcomb Bridge Rd, Roswell, GA 30076</strong></div></div>
+      <div class="detail-item"><span class="detail-icon">♡</span><div><small>THE CRAFT</small><strong>if ur coming to the crafts its my house,  915 Catamaran Ct. Alpharetta GA 30005</strong></div></div>
     </section>
 
     <section class="content-section section-wrap" id="rsvp">
-      <div class="section-heading reveal"><div class="eyebrow">FIRST THINGS FIRST</div><h2>Will you <i>be there?</i></h2><p>Let me know so we can plan for everyone. Pick your name and choose your response.</p></div>
+      <div class="section-heading reveal"><div class="eyebrow">U better show up</div><h2>Will you <i>be there?</i></h2><p>U can come to JUST Olive Garden or come to my house and then go to Olive Garden</p></div>
       <div class="rsvp-layout">
         <div class="glass-panel rsvp-panel reveal">
           <div class="panel-kicker">✦ YOUR RSVP</div>
           <label class="field-label" for="rsvpGuest">Choose your name</label>
           <select id="rsvpGuest" class="select-field"><option value="">Select your name...</option></select>
+          <p class="form-note" id="rsvpChoosePrompt">Select name first and then scroll down for yes</p>
           <div class="rsvp-buttons">
-            <button class="rsvp-choice yes-choice" id="rsvpYes" type="button"><span>✓</span><strong>Yes, I'll come</strong></button>
-            <button class="rsvp-choice no-choice" id="rsvpNo" type="button"><span>×</span><strong>No, I can't make it</strong></button>
-          </div>
-          <p class="form-note" id="rsvpMessage" aria-live="polite">Your response will appear in the guest list.</p>
-          <div class="privacy-note"><span>♧</span> Only your name and RSVP status are shown to invitees.</div>
+  <button class="rsvp-choice no-choice" id="rsvpNo" type="button">
+    <span>×</span><strong>Not attending</strong>
+  </button>
+</div>
+<p class="form-note" id="rsvpMessage" aria-live="polite">
+  Choose your name to see the RSVP options.
+</p>
         </div>
         <div class="rsvp-side-note reveal">
           <div class="quote-mark">“</div>
-          <p>It wouldn't be the same without you. Thanks for helping make the day special.</p>
+          <p>Dress Code: -- Girl do u even know me? there isnt a dress code wear sweats for all ic.</p>
           <span class="signature">— Aparna <i>✧</i></span>
           <div class="mini-stars">✦　✧　✦</div>
         </div>
       </div>
-    </section>
-
-    <section class="content-section section-wrap" id="vote">
-      <div class="section-heading reveal"><div class="eyebrow">YOU GET A SAY</div><h2>Choose the <i>Birthday Plan</i></h2><p>Which version of the celebration sounds best? Cast your vote below.</p></div>
-      <div class="plan-grid">
+      <div class="rsvp-plan-area">
+      <div class="plan-grid rsvp-plan-grid" id="rsvpPlanChoices" hidden>
         <article class="plan-card glass-panel reveal" data-plan="olive">
           <div class="plan-art pasta-art"><span>🍝</span><i class="art-spark s1">✧</i><i class="art-spark s2">✦</i></div>
-          <div class="plan-content"><div class="plan-tag">OPTION 01</div><h3>Olive Garden <i>Only</i></h3><p class="plan-description">An evening of good food, conversation, and celebrating together.</p>
-            <div class="plan-facts"><div><span>⌖</span><p><strong>Olive Garden – Roswell</strong><small>955 Holcomb Bridge Rd, Roswell, GA</small></p></div><div><span>◷</span><p><strong>7:00 PM – 10:00 PM</strong><small>Dinner & celebration</small></p></div></div>
-            <button class="button button-outline vote-plan" data-choice="olive" type="button">Vote for Olive Garden <span>→</span></button>
-            <div class="vote-summary"><div><strong id="oliveVotes">0</strong><span>VOTES</span></div><strong class="vote-percent" id="olivePercent">0%</strong></div>
-            <div class="progress-track"><div class="progress-fill" id="oliveBar"></div></div>
+          <div class="plan-content">
+            <div class="plan-tag">OPTION 01</div><h3>Olive Garden <i>Only</i></h3>
+            <p class="plan-description">Food yum yum.</p>
+            <div class="plan-facts"><div><span>⌖</span><p><strong>Olive Garden</strong><small>905 Holcomb Bridge Rd, Roswell, GA 30076</small></p></div><div><span>◷</span><p><strong>7:00 PM – 10:00 PM</strong><small>Dinner &amp; celebration</small></p></div></div>
+            <button class="button button-outline rsvp-plan-button" data-rsvp-choice="restaurant" type="button">Choose Olive Garden only <span>→</span></button>
           </div>
         </article>
         <article class="plan-card glass-panel reveal" data-plan="crafts">
           <div class="plan-art craft-art"><span>🎨</span><i class="art-spark s1">✧</i><i class="art-spark s2">✦</i></div>
-          <div class="plan-content"><div class="plan-tag">OPTION 02</div><h3>Crafts <i>+ Dinner</i></h3><p class="plan-description">A creative afternoon at my house, followed by dinner with everyone.</p>
-            <div class="plan-facts"><div><span>⌂</span><p><strong>Aparna's House</strong><small>Craft afternoon</small></p></div><div class="schedule-fact"><span>◷</span><p><strong>4:00 PM – 6:30 PM</strong><small>Arrive & make crafts</small><strong>6:30 PM</strong><small>Leave for Olive Garden</small><strong>7:00 PM – 10:00 PM</strong><small>Olive Garden dinner</small></p></div></div>
-            <button class="button button-outline vote-plan" data-choice="crafts" type="button">Vote for Crafts + Olive Garden <span>→</span></button>
-            <div class="vote-summary"><div><strong id="craftsVotes">0</strong><span>VOTES</span></div><strong class="vote-percent" id="craftsPercent">0%</strong></div>
-            <div class="progress-track"><div class="progress-fill" id="craftsBar"></div></div>
+          <div class="plan-content">
+            <div class="plan-tag">OPTION 02</div><h3>Crafts <i>+ Dinner</i></h3>
+            <p class="plan-description">Craft and then food</p>
+            <div class="plan-facts"><div><span>⌂</span><p><strong>Aparna's House</strong><small>915 Catamaran Ct. Alpharetta GA 30005</small></p></div><div class="schedule-fact"><span>◷</span><p><strong>4:00 PM – 6:30 PM</strong><small>Arrive &amp; make crafts</small><strong>6:30 PM</strong><small>Leave for Olive Garden</small><strong>7:00 PM – 10:00 PM</strong><small>Olive Garden dinner</small></p></div></div>
+            <button class="button button-outline rsvp-plan-button" data-rsvp-choice="both" type="button">Choose Crafts + Dinner <span>→</span></button>
           </div>
         </article>
       </div>
-      <p class="vote-footnote"><span>✧</span> You can change your vote later. One plan vote per visitor.</p>
+      </div>
     </section>
 
     <section class="content-section section-wrap" id="crafts">
-      <div class="section-heading reveal"><div class="eyebrow">LET'S MAKE SOMETHING</div><h2>Vote for <i>Crafts</i></h2><p>The two crafts with the most votes will be the activities we do.</p></div>
+      <div class="section-heading reveal"><h2>Choose your <i>Crafts</i></h2><p>The two crafts with the most votes will be the activities we do.</p></div>
       <div class="craft-intro glass-panel reveal"><div class="craft-intro-icon">✂</div><div><strong>Choose up to two favorites</strong><span>You can select two ideas. Change your picks any time before voting closes.</span></div><div class="selection-count"><strong id="craftSelectionCount">0/2</strong><span>SELECTED</span></div></div>
       <div class="craft-grid" id="craftGrid">
         <button class="craft-option reveal" data-craft="cookies" type="button"><span class="craft-emoji">🍪</span><span class="craft-name">Cookie Decorating</span><span class="craft-votes" id="count-cookies">0 votes</span><span class="craft-check">✓</span></button>
@@ -134,11 +131,11 @@
         <button class="craft-option reveal" data-craft="frames" type="button"><span class="craft-emoji">🖼️</span><span class="craft-name">Photo Frame Decorating</span><span class="craft-votes" id="count-frames">0 votes</span><span class="craft-check">✓</span></button>
         <button class="craft-option reveal" data-craft="caps" type="button"><span class="craft-emoji">🧢</span><span class="craft-name">Baseball Cap Painting &amp; Decorating</span><span class="craft-votes" id="count-caps">0 votes</span><span class="craft-check">✓</span></button>
       </div>
-      <div class="craft-results glass-panel reveal"><div class="results-title"><div><span class="panel-kicker">THE COMMUNITY FAVORITES</span><h3>Craft leaderboard</h3></div><span class="live-pill"><i></i> LIVE-STYLE RESULTS</span></div><div id="craftLeaderboard" class="leaderboard"></div></div>
+      <div class="craft-results glass-panel reveal"><div class="results-title"><div><span class="panel-kicker">uhh votes</span><h3>Craft leaderboard</h3></div><span class="live-pill"><i></i> LIVE-STYLE RESULTS</span></div><div id="craftLeaderboard" class="leaderboard"></div></div>
     </section>
 
     <section class="content-section section-wrap" id="suggestions">
-      <div class="section-heading reveal"><div class="eyebrow">HAVE AN IDEA?</div><h2>Suggest a <i>Craft</i></h2><p>Think of something even better? Add it to the list and let everyone vote.</p></div>
+      <div class="section-heading reveal"><div class="eyebrow">HAVE AN IDEA?</div><h2>Suggest a <i>Craft</i></h2><p>im lwk dumb so if u can come up with smth better pls suggest</p></div>
       <div class="suggestion-layout">
         <form class="suggestion-form glass-panel reveal" id="suggestionForm">
           <div class="panel-kicker">✦ YOUR IDEA</div>
@@ -147,29 +144,28 @@
           <label class="field-label" for="suggestionText">Craft idea</label>
           <input id="suggestionText" class="text-field" type="text" maxlength="70" placeholder="e.g. Make friendship bracelets" required>
           <button class="button button-primary" type="submit">Add suggestion <span>↗</span></button>
-          <p class="form-note" id="suggestionMessage" aria-live="polite">Keep it creative!</p>
+          <p class="form-note" id="suggestionMessage" aria-live="polite">if its boring im overuling it</p>
         </form>
         <div class="suggestion-list-wrap reveal"><div class="suggestions-heading"><h3>Community ideas</h3><span id="suggestionTotal">0 IDEAS</span></div><div id="suggestionList" class="suggestion-list"><div class="empty-state">No extra ideas yet. Yours could be the first ✧</div></div></div>
       </div>
     </section>
 
     <section class="content-section section-wrap" id="invitees">
-      <div class="section-heading reveal"><div class="eyebrow">THE GUEST LIST</div><h2>Who's <i>Invited?</i></h2><p>A little roll call of the people who make every celebration better.</p></div>
-      <div class="guest-overview reveal"><div><strong id="attendingTotal">0</strong><span>ATTENDING</span></div><div><strong id="noResponseTotal">10</strong><span>AWAITING RSVP</span></div><div><strong id="notAttendingTotal">0</strong><span>CAN'T MAKE IT</span></div></div>
+      <div class="section-heading reveal"><div class="eyebrow">THE GUEST LIST</div><h2>Who's <i>Invited?</i></h2><p> i hope u dont u all hate each other</p></div>
+      <div class="guest-overview reveal"><div><strong id="attendingTotal">0</strong><span>OLIVE GARDEN</span></div><div><strong id="craftsAttendingTotal">0</strong><span>CRAFTS + DINNER</span></div><div><strong id="noResponseTotal">11</strong><span>AWAITING RSVP</span></div><div><strong id="notAttendingTotal">0</strong><span>NOT ATTENDING</span></div></div>
       <div class="guest-list glass-panel reveal" id="guestList"></div>
-      <p class="guest-footnote">Guest list is sorted by RSVP status. No response is shown until someone replies.</p>
     </section>
 
     <section class="wishlist-section section-wrap" id="wishlist">
-      <div class="wishlist-heading reveal"><div><div class="eyebrow">A LITTLE SOMETHING, IF YOU'D LIKE</div><h2>Wishlist <span>🎁</span></h2><p>My favorite gifts tend to be the ones that are handmade or thoughtfully chosen. However, if you're short on time, here are some ideas!</p></div><div class="wishlist-stamp">THOUGHTFUL<br>OVER PERFECT <span>♡</span></div></div>
-      <div class="budget-panel glass-panel reveal"><div class="budget-copy"><div class="panel-kicker">FIND SOMETHING IN YOUR RANGE</div><h3>Your budget, <i>your pick.</i></h3><p>Move the slider to browse gift ideas in that range. Prices can change, so check the listing for current details.</p></div><div class="budget-control"><div class="budget-value"><span>YOUR BUDGET</span><strong id="budgetValue">$5</strong></div><input type="range" id="budgetSlider" min="0" max="20" value="5" step="1" aria-label="Gift budget from zero to twenty dollars"><div class="range-labels"><span>$0</span><span>$5</span><span>$10</span><span>$15</span><span>$20</span></div></div></div>
-      <div class="wishlist-results-head"><div><span class="panel-kicker">A FEW IDEAS TO EXPLORE</span><h3 id="wishlistRangeTitle">Little treats · $0–$5</h3></div><span id="wishlistItemCount" class="wishlist-count">9 IDEAS</span></div>
+      <div class="wishlist-heading reveal"><div><div class="eyebrow">if u dont know what to get me PLEASE FOR THE LOVE OF GOD DO NOT GET ME A SOCK IM LOOKING AT U KEARTHI</div><h2>Wishlist <span>🎁</span></h2><p>My favorite gifts are handmade or thoughtfully chosen. However, if you're busy or lwk just not creative or for some reason dont know me here are some suggestions!</p></div><div class="wishlist-stamp">THOUGHTFUL<br>OVER PERFECT <span>♡</span></div></div>
+      <div class="budget-panel glass-panel reveal"><div class="budget-copy"><div class="panel-kicker">FIND SOMETHING IN YOUR RANGE</div><h3>Your budget </h3><p>Move the slider to browse gift ideas in that range. If ur getting me a gift card a handwritten letter is mandatory.</p></div><div class="budget-control"><div class="budget-value"><span>YOUR BUDGET</span><strong id="budgetValue">$5</strong></div><input type="range" id="budgetSlider" min="0" max="20" value="5" step="1" aria-label="Gift budget from zero to twenty dollars"><div class="range-labels"><span>$0</span><span>$5</span><span>$10</span><span>$15</span><span>$20</span></div></div></div>
+      <div class="wishlist-results-head"><div><span class="panel-kicker">A FEW IDEAS </span><h3 id="wishlistRangeTitle">Little treats(im a bigback i know) · $0–$5</h3></div><span id="wishlistItemCount" class="wishlist-count">9 IDEAS</span></div>
       <div class="wishlist-grid" id="wishlistGrid"></div>
-      <p class="wishlist-disclaimer">These are ideas, not a shopping checklist. A note, a drawing, or something you make yourself is just as lovely. ♡</p>
+      <p class="wishlist-disclaimer">id appreciate a gift which reminds me why i tolerate u otherwise ill js be annoyed ♡</p>
     </section>
 
     <section class="closing-section section-wrap reveal">
-      <div class="closing-stars">✦　✧　✦</div><div class="eyebrow">CAN'T WAIT TO CELEBRATE</div><h2>See you on <i>December 5th.</i></h2><p>Thanks for being part of the planning. It's going to be a lovely day.</p><a class="button button-primary" href="#rsvp">Go to RSVP <span>↑</span></a>
+      <div class="closing-stars">✦　✧　✦</div><div class="eyebrow">CAN'T WAIT TO eat food</div><h2>I better See you on <i>December 5th.</i></h2><p>first person to text me "Aparna ur so amazing" will get a prize</p><a class="button button-primary" href="#rsvp">Go to RSVP <span>↑</span></a>
     </section>
   </main>
 

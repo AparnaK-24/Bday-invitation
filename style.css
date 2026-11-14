@@ -357,3 +357,15 @@ input[type="range"]::-moz-range-thumb { width: 13px; height: 13px; border: 3px s
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* RSVP plan selection updates */
+.rsvp-plan-area { margin-top: 48px; }
+.rsvp-plan-heading { margin-bottom: 24px; }
+.rsvp-plan-grid[hidden] { display: none !important; }
+.rsvp-plan-grid .plan-card { transition: border-color .25s, box-shadow .25s, transform .25s; }
+.rsvp-plan-grid .plan-card.selected-plan { border-color: rgba(140,224,177,.75); box-shadow: 0 0 0 1px rgba(140,224,177,.25), 0 18px 55px rgba(0,0,0,.16); }
+.rsvp-plan-button.selected-vote { border-color: rgba(140,224,177,.75); color: #a7e9c2; background: rgba(140,224,177,.1); }
+.guest-overview { grid-template-columns: repeat(4,1fr); }
+@media (max-width: 560px) { .guest-overview { grid-template-columns: repeat(2,1fr); row-gap: 12px; } .guest-overview > div:nth-child(2) { border-right: 0; } }
+
+.rsvp-buttons { grid-template-columns: 1fr; max-width: 260px; }
